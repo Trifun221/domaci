@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderovanje tabele</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            border: 1px ;
+            padding: 6px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>Kolicina</th>
+                <th>Cena</th>
+                <th>Ukupna cena</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong></strong></td>
+                <td id="punaCena"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="itemsdata.js"></script>
+
+</body>
+</html>
